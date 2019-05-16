@@ -2,7 +2,7 @@ package com.example.weatherapp.dto
 
 data class MainDTO(
 
-    val temp: String,
+    val temp: Double,
     val temp_min: String,
     val temp_max: String,
     val pressure: String,

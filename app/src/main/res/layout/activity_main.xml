@@ -5,14 +5,15 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/www"
+        android:background="@drawable/weather_back_2"
+        android:id="@+id/lytBack"
         app:layoutDescription="@xml/motion_scene"
-        tools:context=".ui.MainActivity">
+        tools:context="com.example.weatherapp.ui.MainActivity">
     <LinearLayout
             android:id="@+id/frameLayout"
             android:layout_width="match_parent"
             android:orientation="vertical"
-            android:layout_height="200dp"
+            android:layout_height="wrap_content"
             android:padding="8dp"
             android:background="#6D4C79AF"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -27,20 +28,23 @@
                       android:layout_height="wrap_content">
             <TextView android:layout_width="wrap_content"
                       android:text="17.00"
+                      android:id="@+id/txtDate1"
                       android:padding="16dp"
                       android:layout_marginLeft="32dp"
                       android:layout_weight="1"
                       android:layout_height="wrap_content" android:fontFamily="@font/roboto_bold"
-                      android:textSize="20sp" android:textStyle="bold"/>
+                      android:textSize="20sp"/>
             <TextView android:layout_width="wrap_content"
                       android:text="15°"
+                      android:id="@+id/txtWeather1"
                       android:paddingRight="32dp"
                       android:layout_height="wrap_content" android:fontFamily="@font/roboto_bold"
-                      android:textSize="20sp" android:textStyle="bold"/>
+                      android:textSize="20sp"/>
             <ImageView android:layout_width="50dp"
 
                        android:background="@drawable/sun"
                        android:layout_height="50dp"
+                       android:id="@+id/imgWeather1"
                        android:layout_marginBottom="16dp"
                        android:layout_marginRight="36dp"
                        android:scrollbars="horizontal"/>
@@ -52,18 +56,21 @@
                       android:layout_height="wrap_content">
             <TextView android:layout_width="wrap_content"
                       android:text="18.00"
+                      android:id="@+id/txtDate2"
                       android:padding="16dp"
                       android:layout_marginLeft="32dp"
                       android:layout_weight="1"
                       android:layout_height="wrap_content" android:fontFamily="@font/roboto_bold"
-                      android:textSize="20sp" android:textStyle="bold"/>
+                      android:textSize="20sp"/>
             <TextView android:layout_width="wrap_content"
                       android:text="14°"
+                      android:id="@+id/txtWeather2"
                       android:paddingRight="32dp"
                       android:layout_height="wrap_content" android:fontFamily="@font/roboto_bold"
-                      android:textSize="20sp" android:textStyle="bold"/>
+                      android:textSize="20sp"/>
             <ImageView android:layout_width="50dp"
                        android:layout_marginRight="36dp"
+                       android:id="@+id/imgWeather2"
                        android:layout_marginBottom="16dp"
                        android:background="@drawable/sun"
                        android:layout_height="50dp"
@@ -72,22 +79,24 @@
         </LinearLayout>
         <LinearLayout android:layout_width="match_parent"
                       android:orientation="horizontal"
-
-                      android:layout_height="250dp">
+                      android:layout_height="wrap_content">
             <TextView android:layout_width="wrap_content"
                       android:text="16.00"
+                      android:id="@+id/txtDate3"
                       android:padding="16dp"
                       android:layout_marginLeft="32dp"
                       android:layout_weight="1"
                       android:layout_height="wrap_content" android:fontFamily="@font/roboto_bold"
-                      android:textSize="20sp" android:textStyle="bold"/>
+                      android:textSize="20sp"/>
             <TextView android:layout_width="wrap_content"
                       android:text="10°"
+                      android:id="@+id/txtWeather3"
                       android:paddingRight="32dp"
                       android:layout_height="wrap_content" android:fontFamily="@font/roboto_bold"
-                      android:textSize="20sp" android:textStyle="bold"/>
+                      android:textSize="20sp"/>
             <ImageView android:layout_width="50dp"
                        android:layout_marginRight="36dp"
+                       android:id="@+id/imgWeather3"
                        android:layout_marginBottom="16dp"
                        android:background="@drawable/sun"
                        android:layout_height="50dp"
@@ -125,7 +134,7 @@
             android:layout_marginTop="92dp" android:layout_marginEnd="68dp"/>
 
     <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/txtCurrentWeather2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/roboto_bold"
